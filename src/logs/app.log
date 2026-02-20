@@ -1,0 +1,36 @@
+2026-02-19 15:58:29.985 | INFO     | __main__:main:23 - running the application...
+2026-02-19 15:58:29.992 | INFO     | model.model_service:load_model:42 - checking the existance of model config file at model\models/rf_db_v2
+2026-02-19 15:58:29.994 | INFO     | model.model_service:load_model:58 - model rf_db_v2 exists! -> loading model configuration file
+2026-02-19 15:58:29.994 | INFO     | model.model_service:predict:79 - making prediction!
+2026-02-19 15:58:30.006 | INFO     | __main__:main:39 - prediction = [2127.62470573]
+2026-02-19 15:59:26.068 | INFO     | __main__:main:23 - running the application...
+2026-02-19 15:59:26.068 | INFO     | model.model_service:load_model:42 - checking the existance of model config file at model\models/rf_db_v2
+2026-02-19 15:59:26.068 | WARNING  | model.model_service:load_model:52 - model at model\models\rf_db_v2 was not found -> building rf_db_v2
+2026-02-19 15:59:26.068 | INFO     | model.pipeline.model:build_model:34 - starting up model building pipeline
+2026-02-19 15:59:26.068 | INFO     | model.pipeline.preparation:prepare_data:26 - starting up preprocessing pipeline
+2026-02-19 15:59:26.068 | INFO     | model.pipeline.collection:load_data_from_db:26 - extracting the table from the database
+2026-02-19 15:59:26.110 | INFO     | model.pipeline.preparation:_encode_cat_cols:43 - encoding categorical columns: ['balcony', 'parking', 'furnished', 'garage', 'storage']
+2026-02-19 15:59:26.123 | INFO     | model.pipeline.preparation:_parse_garden_col:61 - pasring garden column
+2026-02-19 15:59:26.123 | INFO     | model.pipeline.model:_get_x_y:83 - defining X and Y variables. X vars: ['area', 'constraction_year', 'bedrooms', 'garden', 'balcony_yes', 'parking_yes', 'furnished_yes', 'garage_yes', 'storage_yes']; y var: rent
+2026-02-19 15:59:26.123 | INFO     | model.pipeline.model:_split_train_test:101 - splitting data into train and test sets
+2026-02-19 15:59:26.125 | INFO     | model.pipeline.model:_train_model:123 - training a model with hyperparameters
+2026-02-19 16:00:00.367 | INFO     | model.pipeline.model:_evaluate_model:163 - evaluating model performance. SCORE=0.7274110420073778
+2026-02-19 16:00:00.367 | INFO     | model.pipeline.model:_save_model:178 - saving a model to a directory: model\models/rf_db_v2
+2026-02-19 16:00:00.376 | INFO     | model.model_service:load_model:58 - model rf_db_v2 exists! -> loading model configuration file
+2026-02-19 16:00:00.392 | INFO     | model.model_service:predict:79 - making prediction!
+2026-02-19 16:00:00.392 | INFO     | __main__:main:39 - prediction = [2275.20812003]
+2026-02-19 16:12:16.023 | INFO     | __main__:main:23 - running the application...
+2026-02-19 16:12:16.023 | INFO     | model.model_service:load_model:42 - checking the existance of model config file at model\models/rf_db_v2
+2026-02-19 16:12:16.023 | INFO     | model.model_service:load_model:58 - model rf_db_v2 exists! -> loading model configuration file
+2026-02-19 16:12:16.045 | INFO     | model.model_service:predict:79 - making prediction!
+2026-02-19 16:12:16.053 | INFO     | __main__:main:39 - prediction = [2275.20812003]
+2026-02-19 16:20:07.894 | INFO     | __main__:main:23 - running the application...
+2026-02-19 16:20:07.896 | INFO     | model.model_service:load_model:42 - checking the existance of model config file at model\models/rf_db_v2
+2026-02-19 16:20:07.896 | INFO     | model.model_service:load_model:58 - model rf_db_v2 exists! -> loading model configuration file
+2026-02-19 16:20:07.924 | INFO     | model.model_service:predict:79 - making prediction!
+2026-02-19 16:20:07.934 | INFO     | __main__:main:39 - prediction = [2275.20812003]
+2026-02-19 16:22:38.260 | INFO     | __main__:main:23 - running the application...
+2026-02-19 16:22:38.261 | INFO     | model.model_service:load_model:42 - checking the existance of model config file at model\models/rf_db_v2
+2026-02-19 16:22:38.261 | INFO     | model.model_service:load_model:58 - model rf_db_v2 exists! -> loading model configuration file
+2026-02-19 16:22:38.272 | INFO     | model.model_service:predict:79 - making prediction!
+2026-02-19 16:22:38.294 | INFO     | __main__:main:39 - prediction = [2275.20812003]
