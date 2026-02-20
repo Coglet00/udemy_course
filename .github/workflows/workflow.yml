@@ -23,7 +23,7 @@ jobs:
           python-version: '3.11'  # Use a specific version instead of a range
 
       - name: Install Poetry
-         uses: snok/install-poetry@v1
+        uses: snok/install-poetry@v1
 
       - name: Install dependencies using Poetry
         run: |
